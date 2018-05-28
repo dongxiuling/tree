@@ -7,88 +7,51 @@
     margin: 0 auto;
     overflow: hidden;
     border-radius: 0 0 10px 10px;
-    height: 750px;
+    /*height: 650px;*/
+    padding-bottom: 40px;
 }
 #border1{               /*里层边框*/
     width: 900px;
-    height:600px;      /*高度根据页面设置*/
+    /*height:450px;      /!*高度根据页面设置*!/*/
     border: 1px solid #dddddd;
     margin: 34px auto 0 auto;
+    padding-bottom: 40px;
+
 }
-hr{                    /*有的页面有分界线*/
-    font-size: 18px;
-    margin-top: 34px;
-    text-align: center;
+hr {
+    height: 1px;
+    border: none;
+    border-top: 1px solid #AFD400;
+    width: 900px;
+    margin: 33px auto;
 }
 /*welcome  begin*/
 .welcome{
     font-size: 18px;
     margin-top: 34px;
     text-align: center;
-    color: #00B262;
 }
 .click-link{
     color: #009551;
 }
 /*welcome  end*/
-.content{
-    margin-left: 20px;
-    width: 540px;
-}
-.content1{
-    float: left;
-    margin-top: 50px;
-}
-.content1 span{
-    float: left;
-    line-height: 50px;
-    margin: 0 auto;
-    color: #6D84B4;
-    font-size: 26px;
-}
-
-.file1 input{
-    display: block;
-    width: 400px;
-    height: 50px;
-    margin-right: 150px;
+form{
     margin-top: 20px;
-    border: none;
-    font-size: 20px;
-    color: #898989;
-    border-radius: 5px;
-    float: right;
 }
-.content2{
-    clear: both;
-    margin-top: 30px;
-    float: left;
+.form-group{
+    margin-left: 20px;
 }
-.content2 span{
-    line-height: 50px;
-    color: #6D84B4;
-    font-size: 26px;
+label{
+    font-size: 16px;
 }
-.content2 select{
-    width: 200px;
-    height: 40px;
-    font-size: 20px;
-    color: #6E6E6E;
-    border-radius: 5px;
-    border: 1px solid rgb(211,211,211);
+.sub-btn{
+    margin-left: 20px;
+}
+.btn-success,.btn-primary{
+    width: 80px;
+}
+.form-control{
+    margin-left: 20px;
+    width: 850px;
 }
 
-.content3{
-    clear: both;
-    margin: 30px 0 0 150px;
-    float: left;
-}
-.content3 input{
-    width: 80px;
-    height: 40px;
-    margin: 50px 0 0 70px;
-    background: #BABEBF;
-    border: none;
-    border-radius: 5px;
-    color: #00B262;
-}

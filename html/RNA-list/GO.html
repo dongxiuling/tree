@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../../css/common.css">          <!--把common.css引入-->
     <link rel="stylesheet" href="../../css/RNA-list/GO.css"><!--页面对应的css-->
     <link rel="stylesheet" href="../../css/tanceng.css">             <!--把tanceng.css引入-->
@@ -82,27 +83,26 @@
     <div class="wrapper">
         <div class="border">
             <div id="border1">
-                <div class="content">
-                    <form action="http://219.217.203.41:8000/goResult" method="post" enctype="multipart/form-data">
-                        <div class="input">
-                            Input your gene ID:
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">list 1:</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
                         </div>
-                        <div>
-                            <textarea name="gotext" rows="10" cols="60"></textarea>
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label">Select Algrithm:</label>
+                            <div class="col-sm-8">
+                                <select class="form-control">
+                                    <option value="all_ids.txt">all_ids.txt</option>
+                                </select>
+                            </div>
                         </div>
-                        <div>
-                            <label name="database">Select DB:</label>
-                            <select class="sel" name="database">
-                                <option value="all_ids.txt">all_ids.txt</option>
-                            </select>
-                        </div>
-                        <div class="submit">
-                            <input value="RUN" style="width:65px;height:30px;font-size:14px" type="submit">
-                            <input value="RESET" style="width:75px;height:30px;font-size:14px" type="reset">
+                        <div class="submit col-sm-offset-2">
+                            <button type="button" class="btn btn-primary">RUN</button>
+                            <button type="button" class="btn btn-success">RESET</button>
                         </div>
                     </form>
-                </div>
-
             </div>
         </div>
     </div>

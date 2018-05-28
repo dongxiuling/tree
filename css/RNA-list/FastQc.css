@@ -1,13 +1,20 @@
 .border{              /* 外层大边框*/
+    width: 1000px;
     background: #eeeeee;
-    border: 1px solid #fbcb09;
+    border-left: solid 1px  #dddddd;
+    border-right: solid 1px  #dddddd;
+    border-bottom: solid 1px  #dddddd;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 40px;
+    /*height: 650px;*/
 }
 #border1{               /*里层边框*/
     width: 900px;
-    /*height:400px;      /!*高度根据页面设置*!/*/
+       /*高度根据页面设置*/
 
     margin: 34px auto 0 auto;
-    padding-bottom:40px;
 }
 hr{                    /*有的页面有分界线*/
     height:1px;
@@ -26,58 +33,9 @@ hr{                    /*有的页面有分界线*/
     color: #009551;
 }
 /*welcome  end*/
-.content1 {
-    margin: 20px 200px;
-    width: 500px;
+.form-group{
+    font-size: 16px;
 }
-.content1 span{
-    float: left;
-    line-height: 50px;
-    margin: 0 auto;
-    color: #6D84B4;
-    font-size: 26px;
-}
-.content2{
-    clear: both;
-}
-.run{
-    width:65px;
-    height:30px;
-    font-size:14px
-}
-.reset{
-    width:75px;
-    height:30px;
-    font-size:14px;
-}
-.file{
-    position: relative;
-    left: 80px;
-    padding: 0;
-    line-height: 50px;
-    height: 40px;
-    border-radius: 10%;
-    top: 5px;
-}
-
-.content1 input{
-    position: absolute;
-    left: 20px;
-    top: 4px;
-    height: 40px;
-    font-size:20px;
-}
-.content2{
-    margin-left: 160px;
-    width: 300px;
-}
-.content2 input{
+.btn-success,.btn-primary{
     width: 80px;
-    height: 40px;
-    margin: 50px 0 0 70px;
-    background: #BABEBF;
-    border: none;
-    border-radius: 5px;
-    color: #00B262;
-    float: left;
 }

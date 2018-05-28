@@ -10,6 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../../css/common.css">          <!--把common.css引入-->
     <link rel="stylesheet" href="../../css/RNA-list/Mapping.css"><!--页面对应的css-->
     <link rel="stylesheet" href="../../css/tanceng.css">             <!--把tanceng.css引入-->
@@ -88,44 +89,39 @@
 <div id="container">
     <div class="wrapper">
         <div class="border">
-            <div class="welcome">
-            <span class="welcome-title">
-                 Welcome to GENE TEST!If you want to use more features of the web site,please login first!
-            </span>
-                <a class="click-link" href="">
-                    Click here!
-                </a>
-            </div>
-           <hr>           <!-- 有的页面有分界线-->
+                <div class="welcome">
+                    <p class="success">
+                        Welcome to GENE TEST!If you want to use more features of the web site,please login first! Click here!
+                        <a class="click-link" href="">Click here!</a>
+                    </p>
+
+                </div>
+                <hr>           <!-- 有的页面有分界线-->
             <div id="border1">
                 <div class="content">
-                    <form action="http://219.217.203.41:8000/goResult" method="post" enctype="multipart/form-data">
-                        <div class="content1">
-                            <span>Reads1:</span>
-                            <div class="file1">
-                                <input  type="file" value="未选择任何文件">
-                            </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputFile">Reads1:</label>
+                            <input type="file" id="exampleInputFile">
                         </div>
-                        <div class="content1">
-                            <span>Reads2:</span>
-                            <div class="file1">
-                                <input  type="file" value="未选择任何文件">
-                            </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">Reads2:</label>
+                            <input type="file" id="exampleInputFile1">
                         </div>
-                        <div class="content2">
-                            <span>Choose database:</span>
-                            <select name="database" id="database">
+                        <div class="checkbox">
+                            <label for="exampleInputFile">Choose database:</label>
+                            <select class="form-control">
                                 <option value="birch.final.genome.fa">birch.final.genome.fa</option>
                                 <option value="birch_pacbio_cds.fa">birch_pacbio_cds.fa</option>
                             </select>
                         </div>
-                        <div class="content3">
-                            <input class="run" value="RUN" type="submit">
-                            <input class="reset"value="RESET"type="reset">
+                        <div class="sub-btn ">
+                            <button type="button" class="btn btn-primary">RUN</button>
+                            <button type="button" class="btn btn-success">RESET</button>
                         </div>
+
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
