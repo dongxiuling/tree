@@ -13,8 +13,7 @@
 
     border: 1px solid #dddddd;
     margin: 34px auto 30px auto;
-    font-size:20px;
-    color:rgb(0,184,81)
+
 }
 #extra .inner-lock input{
 
@@ -27,42 +26,11 @@
 #btn-text{
     margin: 10px 0 30px 30px;
 }
-#btn-text label{
-    padding:10px;
-    display: block;
-    font-size: 18px;
-}
-#btn-text .textarea1{
-    display: block;
-}
+
+
 #btn{
     margin:20px 50px;
 }
-#btn input{
-    border-radius: 5px;
-
-}
-#btn-table tr td input{
-    border-radius: 4px;
-}
-#btn-table select{
-    border-radius: 5px;
-    border: 1px solid rgb(0,184,81);
-    width: 200px;
-    height: 30px;
-}
-#btn-table select option{
-    font-size: 18px;
-}
-#btn-table input{
-    border-radius: 5px;
-    border: 1px solid rgb(0,184,81);
-    width: 200px;
-    height: 30px;
-}
-#btn-table textarea{
-    border: 1px solid rgb(0,184,81);
-    border-radius: 10px;
-    width: 300px;
-    height: 50px;
+#btn .btn-success{
+   margin-right:50px;
 }

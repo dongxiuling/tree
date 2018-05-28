@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/RNA-list/EXPRESSION.css">
     <link rel="stylesheet" href="../../css/tanceng.css">
 </head>
@@ -80,20 +81,26 @@
 </div>
 <div id="container">
     <div class="wrapper">
-        <div class="border">
-            <div id="extra">
-                <div id="btn-text">
-
-                    <label >Input your expression data:</label> </br>
-                    <textarea class="textarea1" rows="10" cols="60"></textarea>
-                    <div id="btn">
-                        <input type="submit" value="RUN" style="width:65px;height:30px;font-size:14px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="reset" value="RESET" style="width:75px;height:30px;font-size:14px">
+        <div class="border" style="padding-top: 40px;">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <label for="">Input your sequence here </label>
+                        <textarea class="form-control col-sm-8" rows="5"></textarea>
                     </div>
-
                 </div>
 
-            </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <button type="button"  class="btn btn-success" >
+                            run
+                        </button>
+                        <button type="button"  class="btn btn-primary" style="margin-left:30px;" >
+                            reset
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>

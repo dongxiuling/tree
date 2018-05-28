@@ -1,6 +1,6 @@
 .border{
     width: 1000px;
-    height: 1150px;
+    /*height: 1150px;*/
     border-left: 1px solid #fbcb09;
     border-right:1px solid #fbcb09 ;
     border-bottom: 1px solid #fbcb09;
@@ -12,15 +12,19 @@
 }
 #about{
     width: 900px;
-    height: 1090px;
+    /*height: 1090px;*/
     border: 1px solid #dddddd;
-    margin: 34px auto 0 auto;
+    margin: 34px auto;
 }
 .img2{
     margin: 29px;
 }
 #about p{
-    font-size: 24px;
+    font-size: 14px;
     margin: 0 29px 29px 29px;
     color:  #5F9F9F;
+    line-height: 30px;
+}
+#about .img2 img{
+    width:100%;
 }

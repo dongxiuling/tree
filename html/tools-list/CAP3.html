@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/tools.css">
-    <link rel="stylesheet" href="../../css/tanceng.css">
-    <link rel="stylesheet" href="../../css/tools/Blast.css">
+    <!--<link rel="stylesheet" href="../../css/tanceng.css">-->
+    <!--<link rel="stylesheet" href="../../css/tools/Blast.css">-->
 </head>
 <body>
 <div id="header">
@@ -81,7 +82,7 @@
 </div>
 <div id="container">
     <div class="wrapper">
-        <div class="border" style="height:600px;">
+        <div class="border" >
             <div class="welcome">
             <span class="welcome-title">
                  Welcome to GENE TEST!If you want to use more features of the web site,please login first!
@@ -91,18 +92,28 @@
                 </a>
             </div>
             <hr>
-            <div class="submit">
-                If you have already submit your data,please remember your code.Enter this code,
-                you will review the result within 24hours.
-            </div>
-            <div><input type="file" class="file"></div>
-            <div><input type="text" class="input1"></div>
-            <div> <div class="your">Or input your sequence here </div>
-                <div  class="textarea"><textarea name="textarea" id="area" cols="60" rows="10"></textarea></div>
-            </div>
-            <div>
-                <input type="button" value="RUN" class="func">
-                <input type="button" value="RESET" class="func">
+
+
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <label for="">Input your sequence here </label>
+                        <textarea class="form-control col-sm-8" rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <button type="button"  class="btn btn-success" >
+                            run
+                        </button>
+                        <button type="button"  class="btn btn-primary" style="margin-left:30px;" >
+                            reset
+                        </button>
+                    </div>
+                </div>
+            </form>
+
         </div>
     </div>
 </div>

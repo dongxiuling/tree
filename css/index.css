@@ -1,6 +1,6 @@
 .border{
     width: 1000px;
-    height: 819px;
+    /*height: 819px;*/
     border-left:1px solid #fbcb09;
     border-right: 1px solid #fbcb09;
     border-bottom: 1px solid #fbcb09;
@@ -11,15 +11,15 @@
 }
 #content{
      width: 900px;
-     height: 764px;
+     /*height: 764px;*/
      border: 1px solid #dddddd;
-     margin: 34px auto 0 auto;
+     margin: 34px auto ;
  }
 .container-content{
     width: 840px;
-    height: 700px;
+    /*height: 700px;*/
     margin:20px auto;
-    font-size:24px;
+    font-size:14px;
     color:  #5F9F9F;
     line-height:40px;
 }

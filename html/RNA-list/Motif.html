@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/RNA-list/Motif.css">
     <link rel="stylesheet" href="../../css/tanceng.css">
 </head>
@@ -83,48 +84,30 @@
         <div class="border">
             <div id="extra">
                 <div id="btn-text">
-                    <table id="btn-table">
-                        <tr>
-                            <td> Choose database:&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</td>
-                            <td> <select name="database">
-                                <option value="birch_gene.promoter.fa">birch_gene.promoter.fa</option>
-                            </select></td>
-                        </tr>
-                        <tr>
-                        <tr>
-                            <td>     </td>
-                            <td>     </td>
-                        </tr>
-                        <tr>
-                            <td>     </td>
-                            <td>     </td>
-                        </tr>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Choose database:</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" >
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Pvalue report threshold:</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" >
+                        </div>
+                        <div class="form-group" style="overflow: hidden;">
 
-                        <tr>
-                            <td>Pvalue report threshold: &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</td>
-                            <td><input   type="text" value="0.05" name="motiftext"></td>
-                        </tr>
-                        <tr>
-                            <td>    </td>
-                            <td>    </td>
-                        </tr>
-                        <tr>
-                            <td>    </td>
-                            <td>    </td>
-                        </tr>
+                            <label>Input your sequence here:</label> <br>
+                            <textarea class="form-control col-sm-8" rows="5"></textarea>
+                        </div>
 
-                        <tr>
-                            <td><span>Input your sequence here:</span></td>
-                            <td><textarea name="motext" id="motext" ></textarea></td>
-                        </tr>
+                        <div class="form-group">
+                            <div id="btn">
+                                <button type="button" class="btn btn-success">RUN</button>
+                                <button type="button" class="btn btn-primary">RESET</button>
+                            </div>
+                        </div>
+                    </form>
 
 
-                    </table>
-
-                    <div id="btn">
-                        <input type="submit" value="RUN" style="width:65px;height:30px;font-size:14px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="reset" value="RESET" style="width:75px;height:30px;font-size:14px">
-                    </div>
                 </div>
 
             </div>

@@ -22,6 +22,11 @@
 }
 .downloads a{
     display: block;
-    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 40px;
+    color:#5F9F9F;
 }
+/*.downloads a:hover{*/
+    /*color:#0001ee;*/
+/*}*/
 /*---download  end---*/

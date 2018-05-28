@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/tools.css">
-    <link rel="stylesheet" href="../../css/tanceng.css">
     <link rel="stylesheet" href="../../css/tools/Blast.css">
 </head>
 <body>
@@ -70,18 +70,16 @@
             </li>
             <li class="nav-tit-about">
                 <span class="nav-tit"><a href="../about.html">About our Team</a></span>
-
             </li>
         </ul>
     </div>
-
 </div>
 <div id="banner" class="wrapper">
     <img src="../../images/banner.png" alt="">
 </div>
 <div id="container">
     <div class="wrapper">
-        <div class="border" style="height:950px;">
+        <div class="border">
             <div class="welcome">
             <span class="welcome-title">
                  Welcome to GENE TEST!If you want to use more features of the web site,please login first!
@@ -91,33 +89,66 @@
                 </a>
             </div>
             <hr>
-            <div class="submit">
-                If you have already submit your data,please remember your code.Enter this code,
-                you will review the result within 24hours.
-            </div>
-            <div><input type="file" class="file"></div>
-            <div><input type="text" class="input1"></div>
-            <div class="want">STEP1: Select algorithm you want to use:</div>
-            <select id="balstn">
-                <option value="">blastn</option>
-                <option value="">blastp</option>
-                <option value="">blastx</option>
-            </select>
-            <div class="want" style="color:#0086b4;">STEP2: Input E-value:</div>
-            <div><input type="text" value="10.0" class="text"></div>
-            <div class="want" style="color:#fbcb09">STEP3: Choose database</div>
-            <select name="" id="select1">
-                <option value="birch_pacbio_cds.fa">birch_pacbio_cds.fa</option>
-                <option value="birch.final.genome.fa">birch.final.genome.fa</option>
-                <option value="birch_pacbio_pro.fa">birch_pacbio_pro.fa</option>
-            </select>
-            <div> <div class="your">Or input your sequence here </div>
-                <div  class="textarea"><textarea name="textarea" id="area" cols="60" rows="10"></textarea></div>
-            </div>
-            <div>
-                <input type="button" value="RUN" class="func">
-                <input type="button" value="RESET" class="func">
-            </div>
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <label for="">If you have already submit your data,please remember your code.Enter this code,
+                            you will review the result within 24hours.</label>
+                        <input type="text" class="form-control" placeholder="文本输入">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <input type="file" id="inputfile">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <label for="">Input your sequence here </label>
+                        <textarea class="form-control col-sm-8" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <label for="" class="ontrol-label">1、Select algorithm you want to use:</label>
+                        <select class="form-control">
+                            <option value="blastn">blastn</option>
+                            <option value="blastp">blastp</option>
+                            <option value="blastx">blastx</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <label for="">2、Input E-value:</label>
+                        <input type="text" class="form-control" placeholder="文本输入">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <label for="" class="ontrol-label">3、Choose database</label>
+                        <select class="form-control">
+                            <option value="birch_pacbio_cds.fa">birch_pacbio_cds.fa</option>
+                            <option value="birch.final.genome.fa">birch.final.genome.fa</option>
+                            <option value="birch_pacbio_pro.fa">birch_pacbio_pro.fa</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <button type="button"  class="btn btn-success" >
+                            run
+                        </button>
+                        <button type="button"  class="btn btn-primary" style="margin-left:30px;" >
+                            reset
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>

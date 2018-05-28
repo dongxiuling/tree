@@ -17,7 +17,8 @@
 }
 .extra-ul{
     margin: 25px;
-    font-size: 24px;
+    font-size:16px;
+    line-height: 40px;
     color:#5F9F9F;
 }
 .extra-ul li:hover{
@@ -29,4 +30,11 @@
 }
 .extra-ul .ul2{
     margin-left: 70px;
+}
+
+.extra-ul .ul2 a{
+    color:#5F9F9F;
+}
+.extra-ul .ul2 a:hover{
+    color:#0001ee;
 }

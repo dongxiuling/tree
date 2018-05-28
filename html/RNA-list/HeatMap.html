@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/RNA-list/EXPRESSION.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/RNA-list/HearMap.css">
     <link rel="stylesheet" href="../../css/tanceng.css">
 </head>
 <body>
@@ -83,13 +84,15 @@
         <div class="border">
             <div id="extra">
                 <div id="btn-text">
-
-                    Upload your file:
-                    <input type="file" name="cofile1" class="btn-input">
-
+                    <form>
+                    <div class="form-group">
+                        <label for="exampleInputFile">Upload your file: </label>
+                        <input type="file" id="exampleInputFile">
+                    </div>
+                    </form>
                     <div id="btn">
-                        <input type="submit" value="RUN" style="width:65px;height:30px;font-size:14px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="reset" value="RESET" style="width:75px;height:30px;font-size:14px">
+                        <button type="button" class="btn btn-success">RUN</button>
+                        <button type="button" class="btn btn-primary">RESET</button>
                     </div>
 
                 </div>

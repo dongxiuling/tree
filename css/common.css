@@ -57,20 +57,24 @@ a{
     height: 56px;
     float: right;
     line-height: 56px;
-    font-size: 20px;
+    font-size: 16px;
     color: #009551;
     position: relative;
 }
 #header-login a{
 color:rgb(0,149,81);
 }
+#banner img{
+    width:1000px;
+}
+
 .line{
-    width: 2px;
-    height: 22px;
+    width: 1px;
+    height: 18px;
     background: #009551;
     position: absolute;
-    top: 17px;
-    left: 71px;
+    top: 20px;
+    left: 62px;
 }
 .register{
     margin-left: 36px;
@@ -80,8 +84,8 @@ color:rgb(0,149,81);
 /*header-nav   end*/
 #nav{
     margin-top: 26px;
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
 }
 .nav-tit>a{
      color: #6B4226;
@@ -109,20 +113,20 @@ color:rgb(0,149,81);
     color: #eef8f3;
 }
 .nav-tit{
-    font-size: 20px;
+    font-size: 16px;
 }
 .nav-sub{
     display: none;
     width: 240px;
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 40px;
     background: #009551;
-    font-size: 18px;
+    font-size: 14px;
 }
 .nav-sub li,.nav-sub a{
-    height: 42px;
-    line-height: 42px;
+    height: 35px;
+    line-height: 35px;
     text-align: left;
     display: block;
     text-indent: 20px;
