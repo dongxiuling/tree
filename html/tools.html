@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/tools.css">
 </head>
@@ -79,7 +80,7 @@
 </div>
 <div id="container">
     <div class="wrapper">
-        <div class="border">
+        <div class="border" >
             <div class="welcome">
             <span class="welcome-title">
                  Welcome to GENE TEST!If you want to use more features of the web site,please login first!
@@ -89,26 +90,44 @@
                 </a>
             </div>
             <hr>
-            <div class="submit">
-                If you have already submit your data,please remember your code.Enter this code,
-                you will review the result within 24hours.
-            </div>
-            <div id="tools">
-                <div class="container-content1">
-                    <div class="content1-box">
-                        <input type="text" value="Please input......">
-                        <div class="sfile"><input type="file"></div>
-                        <div class="squene">Or input your sequence here</div>
-                        <div><textarea class="text-box"></textarea></div>
-                        <div class="run">RUN</div>
-                        <div class="run">RESET</div>
+            <!--<div style="width:900px; margin:0 auto;">-->
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <label for="">If you have already submit your data,please remember your code.Enter this code,
+                            you will review the result within 24hours.</label>
+                        <input type="text" class="form-control" placeholder="文本输入">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <input type="file" id="inputfile">
                     </div>
                 </div>
-            </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <label for="">Input your sequence here </label>
+                        <textarea class="form-control col-sm-8" rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <button type="button"  class="btn btn-success" >
+                            run
+                        </button>
+                        <button type="button"  class="btn btn-primary" style="margin-left:30px;" >
+                            reset
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <!--</div>-->
+
         </div>
     </div>
-</div>
-<div id="footer">
+</div><div id="footer">
     <div class="wrapper">
         <span>Copyright 2012/2013 MTU School of Forest | Designed by Yufeng Guo, Xiang Li and Chathura Gunasekara</span>
     </div>

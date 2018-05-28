@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/RNA-seq.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/common.css">          <!--把common.css引入-->
+    <link rel="stylesheet" href="../css/RNA-list/FastQc.css"><!--页面对应的css-->
 </head>
 <body>
 <div id="header">
@@ -20,7 +21,6 @@
                 <a class="login" href="#">Login</a>
                 <span class="line"></span>
                 <a class="register" href="#">Register</a>
-                </ul>
             </div>
         </div>
     </div>
@@ -31,23 +31,23 @@
             <li>
                 <span class="nav-tit"><a href="index.html">Home</a></span>
             </li>
-            <li class=" nav-tit-rna ">
+            <li class=" nav-tit-rna">
                 <span class="nav-tit"><a href="RNA-seq.html">RNA-seq</a></span>
                 <div class="nav-sub nav-sub1">
                     <ul class="nav-subul">
                         <li><a href="RNA-list/FastQc.html">FastQC</a></li>
                         <li><a href="RNA-list/Mapping.html">Mapping</a></li>
-                        <li><a href="RNA-list/Venn%20Gragram.html">Venn diagram</a></li>
+                        <li><a href="RNA-list/venn.html">Venn diagram</a></li>
                         <li><a href="RNA-list/GO.html">Go enrichment</a></li>
                         <li><a href="RNA-list/Motif.html">Motif enrichment</a></li>
                         <li><a href="RNA-list/express.html">Expression cluster</a></li>
-                        <li><a href="RNA-list/Identification%20of%20DEGS_files.html">Identification of DEGS</a></li>
+                        <li><a href="RNA-list/identy.html">Identification of DEGS</a></li>
                         <li><a href="RNA-list/co.html">Co-express analysis</a></li>
                         <li><a href="RNA-list/HeatMap.html">Heat map</a></li>
                     </ul>
                 </div>
             </li>
-            <li cl class="nav-tit-tools">
+            <li  class="nav-tit-tools">
                 <span class="nav-tit"><a href="tools.html">Tools</a></span>
                 <div class="nav-sub nav-sub2">
                     <ul class="nav-subul">
@@ -73,7 +73,6 @@
             </li>
         </ul>
     </div>
-
 </div>
 <div id="banner" class="wrapper">
     <img src="../images/banner.png" alt="">
@@ -82,33 +81,23 @@
     <div class="wrapper">
         <div class="border">
             <div class="welcome">
-            <span class="welcome-title">
-                 Welcome to GENE TEST!If you want to use more features of the web site,please login first!
-            </span>
-                <a class="click-link" href="">
-                    Click here!
-                </a>
+                <p class="success">
+                    Welcome to GENE TEST!If you want to use more features of the web site,please login first! Click here!
+                    <a class="click-link" href="">Click here!</a>
+                </p>
+
             </div>
-            <hr>
-            <div id="reads">
-                <span class="reads-title">
-                    Reads:
-                </span>
-                <div class="reads-detail">
-                    <div class="reads-top">
-                        <div class=" reads-seledcted">
-                            <input class="file" type="file" value="选取文件">
-                        </div>
+            <hr>           <!-- 有的页面有分界线-->
+            <div id="border1">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="exampleInputFile">Reads:</label>
+                        <input type="file" id="exampleInputFile">
                     </div>
-                    <div class="reads-bottom">
-                        <div class="reads-run">
-                            <input type="button" value="RUN">
-                        </div>
-                        <div class="reads-reset">
-                            <input type="button" value="RESET">
-                        </div>
-                    </div>
-                </div>
+                    <div class="checkbox col-sm-offset-4 col-sm-10"></div>
+                    <button type="button" class="btn btn-primary">RUN</button>
+                    <button type="button" class="btn btn-success">RESET</button>
+                </form>
             </div>
         </div>
     </div>
@@ -118,6 +107,5 @@
         <span>Copyright 2012/2013 MTU School of Forest | Designed by Yufeng Guo, Xiang Li and Chathura Gunasekara</span>
     </div>
 </div>
-<script src="../js/jquery-1.12.js"></script>
 </body>
 </html>
