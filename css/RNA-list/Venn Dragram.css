@@ -10,19 +10,12 @@
 }
 #border1{               /*里层边框*/
     width: 950px;
-    height:470px;      /*高度根据页面设置*/
     border: 1px solid #dddddd;
     margin: 34px auto 0 auto;
-    /*padding-bottom: 40px;*/
+    padding-bottom: 40px;
 }
-.group1{
-    float: left;
-    width: 529px;
-}
-.group2{
-    float: left;
-    width: 369px;
-    margin-top: -3px;
+.btn-del{
+    padding: 4px 12px;
 }
 input,textarea{
     width: 300px!important;
